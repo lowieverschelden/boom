@@ -1,17 +1,62 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 h1 {
   color: #333;
 }
-#result .green {
-  color: #2ecc71;
+
+p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-#result .red {
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Countdown timer stijlen */
+.countdown {
+  font-size: 2rem;
+  font-weight: bold;
   color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+/* Resultaatweergave stijlen */
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2ecc71;
 }
